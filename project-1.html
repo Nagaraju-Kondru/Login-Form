@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            
+            
+            .main{
+                width: 100%;
+                height: 100vh;
+                background-image: url('backgroundimage.png');
+                background-position: center;
+                background-size: cover;
+               
+            }
+            .navbar{
+                width: 100%;
+                height: 75px;
+               
+                
+            }
+            .logo{
+                color:orange;
+                font-family: Arial;
+                padding-left: 15px;
+                padding-top: 15px;
+            }
+            .menu{
+                width: 400px;
+                height: 70px;
+                float: left;
+              
+               
+            }
+            ul{
+                float: left;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            ul li{
+                list-style: none;
+                margin-left: 80px;
+                margin-top: 5px;
+                font-size: large;
+            }
+            ul li a{
+                text-decoration: none;
+                color:aliceblue;
+                font-family:Arial;
+                transition: 0.2s ease-in-out;
+            }
+            ul li a:hover{
+                color:orange;
+            }
+            .search{
+                float: left;
+                margin-left: 460px ;
+                margin-top: 2px;
+            }
+            .search1{
+                width: 200px;
+                height: 35px;
+                font-family: 'Times New Roman';
+                background: transparent;
+                color:aliceblue;
+                border-radius: 4px;
+                border:1px solid orange;
+                border-right: none;
+                font-size: large;
+                float: left;
+                padding: 10px;
+            }
+            .botton{
+                width:75px;
+                height: 36.5px;
+                border-radius: 5px;
+                float:left;
+                background-color: orange;
+                font-family: Arial;
+                font-size: 15px;
+                border-color: orange;
+                color:aliceblue;
+            }
+            .content{
+                width: 1300px;
+                height: auto;
+                margin: 70px;
+                color:white;
+                position: relative;
+                
+            }
+            .content h1{
+                font-family: 'Times New Roman';
+                font-size: 50px;
+                padding-left: 30px;
+                margin-top: 14%;
+                letter-spacing: 2px;
+            }
+           .content .paragraph{
+               color:aliceblue;
+               font-family: Arial;
+               padding-left: 30px;
+               word-spacing: 3px;
+            }
+            .content span{
+                color:orange
+            }
+            .content .join{
+                width: 120px;
+                background-color: orange;
+                margin-left:23px;
+                margin-top: 20px;
+                padding: 12px;
+                border-radius: 10px;
+                outline: none;
+                color:aliceblue;
+                font-family: arial;
+                font-size: medium;
+                border: none;
+                cursor: pointer;
+            }
+            .content .join a:hover{
+                color:black;
+            }
+            .form{
+                position:absolute;
+                background-color:rgb(40, 40, 40);opacity: 0.9;
+                
+                width: 250px;
+                height: 350px;
+                top:-20px;
+                right:60px;
+                padding: 30px;
+                border-radius: 30px;
+                
+            }
+            .form h2{
+                padding:5px;
+                background-color: white;
+                text-align: center;
+                border-radius: 50px;
+                color:orange;
+                font-size: large;
+                font-family:sans-serif;
+                margin-top: 0;
+            }
+            .form .email{
+              margin-top: 30px;
+              width: 235px;
+              height: 30px;
+              border-top:none;
+              border-left:none;
+              border-right:none; 
+              background: transparent;
+              border-bottom: 1px solid orange;
+              font-size: 17px;
+              font-family: Arial;
+              color:white;  
+              letter-spacing: 1px;
+              outline: none;
+            }
+            ::placeholder{
+                color:orange;
+            }
+           
+            .form .password{
+              
+              margin-top: 30px;
+              width: 235px;
+              height: 30px;
+              border-top:none;
+              border-left:none;
+              border-right:none; 
+              background: transparent;
+              border-bottom: 1px solid orange;
+              font-size: 17px;
+              font-family: Arial;
+              color:white;
+              outline: none;
+              letter-spacing: 1px;
+            }
+            
+            .form .button{
+                margin-top: 30px;
+                width: 235px;
+                height: 35px;
+                border-radius: 10px;
+                background-color: orange;
+                font-size: 16px;
+                font-family: Arial;
+                border:none;
+            }
+            .form .button a{
+                color:aliceblue;
+                text-decoration: none;
+            }
+            
+            .form .button:hover{
+                background-color:orangered;
+                
+            }
+            .form .button a:hover{
+                color:black;
+            }
+            .link{
+                margin-top: 22px;
+            }
+            .link a{
+                color:orange;
+                text-decoration: none;
+            }
+            .link a:hover{
+                color:orangered;
+            }
+            .menu1{
+                dispaly:none;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+       <div class="main">
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Knr</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                        <div class="menu1">
+                            <ul> 
+                                <li><a href="#">hello</a></li>
+                                 <li><a href="#">hello1</a></li>
+                                  <li><a href="#">hello2</a></li>
+                            </ul>
+                        </div>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" class="search1" placeholder="Enter Text">
+                <a href="#"><button class="botton">Search</button></a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1> Web Desgin &<br><span>Development</span><br>Courses</h1>
+            <p class="paragraph"> Web Design is a specialisation of the design stream. They also use HTML,<br>
+                         CSS, WYSIWYG editing software, mark up validators etc., to create design elements.</p>
+            <button class="join"><a href"#">JOIN US</a></button>
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" class="email" placeholder="Username or email">
+                <input type="password" class="password" placeholder="Password">
+                <button class="button"><a href="#">Login</a></button>
+                <p class="link">Don't have an account? <a href="#">Sign up </a>here</p>
+            </div>
+            
+        </div>
+    </div>
+    </body>
+</html>
